@@ -54,6 +54,7 @@ Before you begin, you'll need:
 3. Choose a display name: `My Trading Bot` (or any name you like)
 4. Choose a username (must end with `bot`): `my\_trading\_bot` (must be unique)
 5. **SAVE THE BOT TOKEN** BotFather gives you (looks like `1234567890:ABCdefGHIjklMNOpqrsTUVwxyz`)
+6. Make sure to check your new bot out, use the /start button.
 
 #### 2C. Get Your User ID
 
@@ -73,8 +74,8 @@ Before you begin, you'll need:
 
 ---
 
-### Step 4: Use Our exe app on your PC to scrape
-1.  Go to +++++++ In the assets download the exe for your pc
+### Step 4: Download PC Version, Start Auto-Buy Now.
+1.  Go to [Assests - Blazing-Bot-Autobuy-Scraper/releases/tag/AutoBuyBlazingBotV1](https://github.com/outsourcehub/Blazing-Bot-Autobuy-Scraper/releases/tag/AutoBuyBlazingBotV1) In the assets download the exe for your pc
 2.  Unzip the folder, open the app, it should lead you to a console where you will setup your telegram bot token, your user Id (also known as owner chat ID), api id, api hash and number associated with the api hash/Id
 3. You should be prompted to verify your number, you'll get a telegram code input it quickly dont waste more than 3 minutes. You will sucessfully be logged in a ready. Go to your telegram bot to setup the scraper
 
