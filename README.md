@@ -19,14 +19,13 @@ Before you begin, you'll need:
 1. A Telegram account
 2. A Blazing Bot account.
 
+---
 
 ## 🛠️ Complete Setup Guide
 
 ### Step 1: Get the Code (OPTIONAL: This step only applies if you are hosting this 24/7 online)
 
 **If on GitHub**: Go to [https://github.com/outsourcehub/Blazing-Bot-Telegeram-Autobuy-Scraper](https://github.com/outsourcehub/Blazing-Bot-Telegeram-Autobuy-Scraper) and fork/clone it
-
----
 
 ### Step 2: Get Telegram Credentials
 
@@ -66,17 +65,21 @@ Before you begin, you'll need:
 
 ### Step 3: Register For Blazing bot
 1. **Register:** Go to https://web.blazingapp.com/@autobuybot
-        i. Click on **connect** then click on Connect with wallet **DO NOT** click on Connect with telegram and sign up with a wallet
-        ii. When you log in on PC click on the last icon on the right (settings icon) and on mobile click on the hamburger icon far right, click on **Sync to telegram bot** go to telegram to confirm. If you have previously had an account click on Yes, sync Webapp or If its your first time start bot and approve\n\n"
-2. **Configure your settings:** Go to https://t.me/blazing_trading_bot under settings find **Auto Buy Mode** and create a template for auto buy, make sure to select and amount or it wont work, a template is the custom settings used to make auto buys/sells\n"
+   i. Click on **connect** then click on Connect with wallet **DO NOT** click on Connect with telegram and sign up with a wallet
+   ii. When you log in on PC click on the last icon on the right (settings icon) and on mobile click on the hamburger icon far right, click on **Sync to telegram bot** go to telegram to confirm. If you have previously had an account click on Yes, sync Webapp or If its your first time start bot and approve\n\n"
+3. **Configure your settings:** Go to https://t.me/blazing_trading_bot under settings find **Auto Buy Mode** and create a template for auto buy, make sure to select and amount or it wont work, a template is the custom settings used to make auto buys/sells\n"
            
  ####   **IMPORTANT:** Make sure auto buy setting is toggled ON in Blazing bot along side the amount! or this bot won't be able to buy with blazing bot
+
+---
 
 ### Step 4: Use Our exe app on your PC to scrape
 1.  Go to +++++++ In the assets download the exe for your pc
 2.  Unzip the folder, open the app, it should lead you to a console where you will setup your telegram bot token, your user Id (also known as owner chat ID), api id, api hash and number associated with the api hash/Id
 3. You should be prompted to verify your number, you'll get a telegram code input it quickly dont waste more than 3 minutes. You will sucessfully be logged in a ready. Go to your telegram bot to setup the scraper
 
+---
+---
 
 ## 📜 License: Prosperity Public License 3.0.0
 
