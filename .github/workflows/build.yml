@@ -109,7 +109,7 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path release
-          Copy-Item build/main.exe release/DbotxScraperVtech-${{ steps.version.outputs.version }}-Windows.exe
+          Copy-Item build/main.exe release/BlazingAutoBuy-${{ steps.version.outputs.version }}-Windows.exe
           Copy-Item config_local.example.py release/
           Copy-Item README_SETUP.md release/ -ErrorAction SilentlyContinue
 
@@ -120,7 +120,7 @@ jobs:
           mkdir -p release
           # Create a zip file of the .app bundle (most portable for macOS)
           cd build
-          zip -r ../release/DbotxScraperVtech-${{ steps.version.outputs.version }}-macOS.zip main.app
+          zip -r ../release/BlazingAutoBuy-${{ steps.version.outputs.version }}-macOS.zip main.app
           cd ..
           cp config_local.example.py release/
           cp README_SETUP.md release/ || true
@@ -129,8 +129,8 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: |
           mkdir -p release
-          cp build/main.bin release/DbotxScraperVtech-${{ steps.version.outputs.version }}-Linux
-          chmod +x release/DbotxScraperVtech-${{ steps.version.outputs.version }}-Linux
+          cp build/main.bin release/BlazingAutoBuy-${{ steps.version.outputs.version }}-Linux
+          chmod +x release/BlazingAutoBuy-${{ steps.version.outputs.version }}-Linux
           cp config_local.example.py release/
           cp README_SETUP.md release/ || true
 
@@ -138,21 +138,21 @@ jobs:
         if: matrix.os == 'windows-latest'
         uses: actions/upload-artifact@v4
         with:
-          name: DbotxScraperVtech-Windows-${{ steps.version.outputs.version }}
+          name: BlazingAutoBuy-Windows-${{ steps.version.outputs.version }}
           path: release/
 
       - name: Upload macOS Artifact
         if: matrix.os == 'macos-latest'
         uses: actions/upload-artifact@v4
         with:
-          name: DbotxScraperVtech-macOS-${{ steps.version.outputs.version }}
+          name: BlazingAutoBuy-macOS-${{ steps.version.outputs.version }}
           path: release/
 
       - name: Upload Linux Artifact
         if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v4
         with:
-          name: DbotxScraperVtech-Linux-${{ steps.version.outputs.version }}
+          name: BlazingAutoBuy-Linux-${{ steps.version.outputs.version }}
           path: release/
 
   # Create GitHub Release on tag push
@@ -179,14 +179,14 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          name: DbotxScraperVtech ${{ steps.version.outputs.version }}
+          name: BlazingAutoBuy ${{ steps.version.outputs.version }}
           body: |
-            ## DbotxScraperVtech ${{ steps.version.outputs.version }}
+            ## BlazingAutoBuy ${{ steps.version.outputs.version }}
             
             ### Downloads
-            - **Windows**: `DbotxScraperVtech-${{ steps.version.outputs.version }}-Windows.exe`
-            - **macOS**: `DbotxScraperVtech-${{ steps.version.outputs.version }}-macOS.zip`
-            - **Linux**: `DbotxScraperVtech-${{ steps.version.outputs.version }}-Linux`
+            - **Windows**: `BlazingAutoBuy-${{ steps.version.outputs.version }}-Windows.exe`
+            - **macOS**: `BlazingAutoBuy-${{ steps.version.outputs.version }}-macOS.zip`
+            - **Linux**: `BlazingAutoBuy-${{ steps.version.outputs.version }}-Linux`
             
             ### ⚠️ Security Warnings
             These executables are **unsigned** and will trigger security warnings:
@@ -196,9 +196,9 @@ jobs:
             
             See README_SETUP.md for full setup instructions.
           files: |
-            artifacts/DbotxScraperVtech-Windows-${{ steps.version.outputs.version }}/*
-            artifacts/DbotxScraperVtech-macOS-${{ steps.version.outputs.version }}/*
-            artifacts/DbotxScraperVtech-Linux-${{ steps.version.outputs.version }}/*
+            artifacts/BlazingAutoBuy-Windows-${{ steps.version.outputs.version }}/*
+            artifacts/BlazingAutoBuy-macOS-${{ steps.version.outputs.version }}/*
+            artifacts/BlazingAutoBuy-Linux-${{ steps.version.outputs.version }}/*
           draft: false
           prerelease: false
         env:
